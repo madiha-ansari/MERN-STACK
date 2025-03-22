@@ -1,0 +1,68 @@
+import React, { useState } from "react";
+
+const App = () => {
+  const [text, setText] = useState("");
+
+  const handleChange = (event) => {
+    setText(event.target.value);
+  };
+
+  return (
+    <div>
+      <input type="text" onChange={handleChange} placeholder="Type something..." />
+      <p>You typed: {text}</p>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from "react";
+
+const App = () => {
+  function handleClick() {
+    alert("Button clicked!");
+  }
+
+  return (
+    <div>
+      <button onClick={handleClick}>Click Me</button>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+import React from "react";
+
+const App = () => {
+  function sayHello(userName) {
+    alert(`Hello, ${userName || "Guest"}!`);
+  }
+
+  return (
+    <div>
+      <h1>Hi ✨</h1>
+      <button onClick={() => sayHello("User")}>Greet</button>
+    </div>
+  );
+};
+
+export default App;

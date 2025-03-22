@@ -1,0 +1,3 @@
+npm create vite@latest .
+    <!-- tailwant cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>

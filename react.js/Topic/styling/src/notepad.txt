@@ -1,0 +1,126 @@
+import React from "react";
+
+const App = () => {
+  return (
+    <div>
+      <h1 style={{ color: "blue", fontSize: "24px", textAlign: "center" }}>
+        Inline Styling in React 🎨
+      </h1>
+      <button style={{ backgroundColor: "purple", color: "white", padding: "10px 20px", border: "none", borderRadius: "5px", cursor: "pointer" }}>
+        Click Me
+      </button>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+import React from "react";
+
+const headingStyle = {
+  color: "blue",
+  fontSize: "24px",
+  textAlign: "center",
+};
+
+const buttonStyle = {
+  backgroundColor: "purple",
+  color: "white",
+  padding: "10px 20px",
+  border: "none",
+  borderRadius: "5px",
+  cursor: "pointer",
+};
+
+const App = () => {
+  return (
+    <div>
+      <h1 style={headingStyle}>React Inline Styling 🚀</h1>
+      <button style={buttonStyle}>Click Me</button>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+import React, { useState } from "react";
+
+const App = () => {
+  const [bgColor, setBgColor] = useState("green");
+
+  return (
+    <div>
+      <button
+        style={{
+          backgroundColor: bgColor,
+          color: "white",
+          padding: "10px 20px",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+        }}
+        onClick={() => setBgColor(bgColor === "green" ? "red" : "green")}
+      >
+        Change Color
+      </button>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+import React from "react";
+
+const App = () => {
+  return (
+    <div>
+      <h1 style={{ color: "blue", textAlign: "center" }}>Inline Styling in React 🎨</h1>
+      <button style={{ backgroundColor: "purple", color: "white", padding: "10px 20px", borderRadius: "5px", border: "none", cursor: "pointer" }}>
+        Click Me
+      </button>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+h1 {
+    color: blue;
+    text-align: center;
+  }
+  
+  button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  import React from "react";
+import "./App.css"; // Import CSS file
+
+const App = () => {
+  return (
+    <div>
+      <h1>React CSS Styling 🎨</h1>
+      <button>Click Me</button>
+    </div>
+  );
+};
+
+export default App;
+
